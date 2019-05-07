@@ -3,25 +3,29 @@ var movies = [
       id: 1,
       title: 'Harry Potter',
       desc: 'film o czarodzieju',
-      img: 'http://via.placeholder.com/400x200'
+      img: 'http://via.placeholder.com/400x200',
+      alt: 'one'
     },
     {
       id: 2,
       title: 'Król Lew',
       desc: 'Film o królu sawanny',
-      img: 'http://via.placeholder.com/400x200'
+      img: 'http://via.placeholder.com/400x200',
+      alt: 'two'
     },
     {
       id: 3,
       title: 'W pogoni za szczesciem',
       desc: 'Co jest wazne w zyciu..pieniadze?',
-      img: 'http://via.placeholder.com/400x200'
+      img: 'http://via.placeholder.com/400x200',
+      alt: 'three'
     },
     {
       id: 4,
       title: 'Me before you',
       desc: 'Eutanazja..., czy kalectwo to dobry powod by sie decydowac na ten krok?',
-      img: 'http://via.placeholder.com/400x200'
+      img: 'http://via.placeholder.com/400x200',
+      alt: 'four'
     }
   ];
 
@@ -29,7 +33,7 @@ var movies = [
     return React.createElement('li', {key: movie.id},
         React.createElement('h2', {}, movie.title),
         React.createElement('p', {}, movie.desc),
-        React.createElement('img', {src: movie.img})
+        React.createElement('img', {src: movie.img}, movie.alt)
       );
   });
 
