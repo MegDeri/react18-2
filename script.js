@@ -33,7 +33,7 @@ var movies = [
     return React.createElement('li', {key: movie.id},
         React.createElement('h2', {}, movie.title),
         React.createElement('p', {}, movie.desc),
-        React.createElement('img', {src: movie.img}, movie.alt)
+        React.createElement('img', {src: movie.img, alt: movie.alt})
       );
   });
 
